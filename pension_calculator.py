@@ -2,14 +2,10 @@ from tkinter import *
 from tkinter import messagebox
 from db import Database
 import datetime
-import numpy as np
 import numpy_financial as npf
-import pandas as pd
-from pandas import Series, DataFrame
-#from calculation_class import Calculator
-#ccc = Calculator
+
 db = Database('pensionDataBase.db')
-#ttb = 3
+
 def populate_list():
     data_list.delete(0,END)
     for row in db.fetch():
